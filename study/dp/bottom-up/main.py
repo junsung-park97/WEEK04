@@ -21,6 +21,7 @@ def detailed_bottom_up(n):
     if n <= 1:
         return n
     
+    # dp 테이블 세팅
     dp = [0] * (n + 1)
     dp[0], dp[1] = 0, 1
     print(f"초기값: dp[0]={dp[0]}, dp[1]={dp[1]}")
