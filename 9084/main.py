@@ -21,4 +21,4 @@ for _ in range(t):
             # dp[amount] += dp[amount - coin]
         # print(dp)
     
-    # print(dp[m])
+    print(dp[m])
