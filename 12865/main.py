@@ -22,7 +22,7 @@ for i in range(n + 1):
         dp[i][w] = dp[i-1][w]
         
         # i번째 물건을 선택하는 경우 (무게 제한 확인)
-        # dp[i - 1][w - weights[i]]
+        # dp[i - 1][w - weights[i]] -> 이해가 잘 안감
         if weights[i] <= w:
             dp[i][w] = max(dp[i][w], dp[i-1][w - weights[i]] + values[i])
 
